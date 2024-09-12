@@ -1,0 +1,197 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{fontspec}
+
+\geometry{margin=1in}
+
+\title{Windows 10/11 Initial Setup and Configuration}
+\author{}
+\date{}
+
+% Set font to Consolas
+\setmonofont{Consolas}
+
+\begin{document}
+
+\maketitle
+
+\section*{Windows 10/11 Setup}
+\begin{itemize}
+    \item DO NOT CONNECT TO WIFI OR NETWORK
+    \item Run through Setup until you get to network configuration
+    \item Press \textbf{Shift+F10} (SHIFT+FN+F10) for Command Prompt
+    \item Type: \begin{verbatim}oobe\bypassnro\end{verbatim}
+    \item After reboot run through setup, at Network Configuration select "I don't have Internet"
+    \item Continue with limited Setup
+\end{itemize}
+
+\section*{Local Username Initial Setup}
+\begin{itemize}
+    \item Username: \texttt{kyma.admin}
+    \item Password: \texttt{000000}
+    \item Security Questions:
+    \begin{itemize}
+        \item What was your first pet's name? \texttt{cali}
+        \item What's the name of the city where you were born? \texttt{cali}
+        \item What was your childhood nickname? \texttt{cali}
+    \end{itemize}
+\end{itemize}
+
+\section*{User Account Configuration}
+\begin{itemize}
+    \item Username: \texttt{hans@kymabatteries.com}
+    \item Password: \texttt{Tuesday@0227!}
+\end{itemize}
+
+\section*{Wi-Fi Configuration}
+\begin{itemize}
+    \item Network Name: \texttt{Kyma}
+    \item Password: \texttt{6s=i87qg5fcp}
+\end{itemize}
+
+\section*{Change Computer Name}
+\begin{itemize}
+    \item Open File Explorer
+    \item Right-Click \textbf{This PC}
+    \item Properties
+    \item Rename this computer
+    \item Computer Name: \texttt{KYMA-HANS}
+    \item Reboot
+\end{itemize}
+
+\section*{Add New User}
+\begin{itemize}
+    \item Settings
+    \item Other Users
+    \item Add Account
+    \item Username: \texttt{hans}
+    \item Password: \texttt{Email Password}
+    \item Security Questions:
+    \begin{itemize}
+        \item What was your first pet's name? \texttt{cali}
+        \item What's the name of the city where you were born? \texttt{cali}
+        \item What was your childhood nickname? \texttt{cali}
+    \end{itemize}
+    \item Select Account
+    \item Change Account Type: Administrator
+    \item Login to new account
+    \item Connect to Internet
+\end{itemize}
+
+\section*{VPN Installation and Configuration}
+Follow the instructions below to install the VPN application for your operating system. Once installed, download the VPN profile attached to this email and double-click on it to add to your OpenVPN or TunnelBlick application.
+
+\subsection*{MAC}
+\begin{itemize}
+    \item Download and install the Stable Version of Tunnelblick from this link:
+    \url{https://tunnelblick.net/downloads.html}
+\end{itemize}
+
+\subsection*{PC}
+\begin{itemize}
+    \item Download the Windows 64 Bit OpenVPN from this link:
+    \url{https://openvpn.net/community-downloads/}
+\end{itemize}
+
+To start the Windows OpenVPN connection, right-click the icon in the notification area, then click connect. To start the Mac Tunnelblick VPN, click the icon in the Menu Bar, then select the KB-VPN configuration. The VPN connection will prompt you for your username and password; check the box to save the password.
+
+\begin{itemize}
+    \item Username: Your first name
+    \item Password: \texttt{Kyma@2024!}
+\end{itemize}
+
+This will also be your username for the new server.
+
+\subsection*{User Remote Desktop to Access the Servers}
+\begin{itemize}
+    \item ZMUDOWSKI: \texttt{192.168.1.10}
+    \item YOSEMITE: \texttt{192.168.1.12}
+\end{itemize}
+
+\subsection*{Admin Credentials for the New Server, YOSEMITE}
+\begin{itemize}
+    \item Username: \texttt{kyma.admin}
+    \item Password: \texttt{\#KBatt@2024!}
+\end{itemize}
+
+\section*{Applications}
+\begin{itemize}
+    \item Remove any Anti Virus or junk apps
+    \item Download Google Chrome
+    \item Download Adobe Acrobat DC Reader
+    \item Login to \texttt{office.com} and install Office
+    \item Download Teams for Work or School from browser
+    \begin{itemize}
+        \item When downloading teams (if there is trouble installing):
+        \begin{itemize}
+            \item Click "Problems installing new teams?"
+            \item Click "install" under App Installer
+            \item In Microsoft Store click "update"
+            \item Wait for download and close store when complete
+            \item Go back to teams download page and install
+        \end{itemize}
+    \end{itemize}
+    \item Sign in to Activate Office
+    \item Setup Outlook
+    \item Sign in to OneDrive
+    \begin{itemize}
+        \item Enable Backup
+    \end{itemize}
+    \item Sign in to Teams
+    \item Install any Additional Applications
+    \item Set Default Apps
+    \begin{itemize}
+        \item Chrome
+        \item Outlook
+        \item Adobe
+    \end{itemize}
+\end{itemize}
+
+\section*{Clean Up Task Bar}
+\begin{itemize}
+    \item Remove Edge
+    \item Remove Chat
+    \item Remove Store
+    \item Pin Outlook
+    \item Pin Teams
+    \item Pin Chrome
+\end{itemize}
+
+\section*{Add Desktop Icons}
+\begin{itemize}
+    \item Right-Click Desktop
+    \item Personalization
+    \item Themes
+    \item Desktop Icons
+    \begin{itemize}
+        \item Computer
+        \item User's Files
+    \end{itemize}
+    \item Right-Click Desktop
+    \item View
+    \item Auto Arrange
+\end{itemize}
+
+\section*{Disable Sleep}
+\begin{itemize}
+    \item Click Start
+    \item Power
+    \item Edit Power Plan
+    \item Put the computer to sleep: \textbf{Never}
+\end{itemize}
+
+\section*{Check for Updates After Setting Up Computer}
+\begin{itemize}
+    \item In taskbar, type "update" in search bar
+    \item Select "check for updates"
+    \item Download and install any windows updates
+    \item Restart if needed
+\end{itemize}
+
+\end{document}

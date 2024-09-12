@@ -1,9 +1,9 @@
-﻿name,title,department,reportsTo,email,phone,employee#,active
-Travis Cournoyer,CEO,C-Suite,,travis@kymabatteries.com,+14015950109,000,yes
-Dan Domikaitis,VP of Engineering,Engineering,Travis Cournoyer,dan@kymabatteries.com,+14072566950,001,yes
-Ana Soplavic,"Director, Strategic Operations",Operations,Travis Cournoyer,ana@kymabatteries.com,+15622543170,002,yes
-"John ""Wes"" Riley",Sr. Reintroduction Specialist,Engineering,Dan Domikaitis,wes@kymabatteries.com,+19499297816,003,yes
-Kate Schlag,"Director, Marketing and Communications",Communications,Travis Cournoyer,kate@kymabatteries.com,+18082987825,004,yes
-Avah Kraushaar,"Intern, Finance",Finance,Travis Cournoyer,avah@kymabatteries.com,+12187507609,005,yes
-"James ""Jimmy"" Kurcz","Intern, Engineering",Engineering,Dan Domikaitis,james@kymabatteries.com,+19498440348,006,yes
-Hans Devouassoux,Sr. Reintroduction Specialist,Engineering,Dan Domikaitis,hans@kymabatteries.com,+17606078727,007,yes
+﻿name,title,department,reportsTo,email,phone,employee#,active,headshotFile
+Travis Cournoyer,CEO,C-Suite,,travis@kymabatteries.com,14015950109,0,yes,Travis 2 WB.tif
+Dan Domikaitis,VP of Engineering,Engineering,Travis Cournoyer,dan@kymabatteries.com,14072566950,1,yes,Dan 2 WB.tif
+Ana Soplavic,"Director, Strategic Operations",Operations,Travis Cournoyer,ana@kymabatteries.com,15622543170,2,yes,Ana 2 WB.tif
+"John ""Wes"" Riley",Sr. Reintroduction Specialist,Engineering,Dan Domikaitis,wes@kymabatteries.com,19499297816,3,yes,Wes-White-Background.tif
+Kate Schlag,"Director, Marketing and Communications",Communications,Travis Cournoyer,kate@kymabatteries.com,18082987825,4,yes,_U3A1337.CR2
+Avah Kraushaar,"Intern, Finance",Finance,Travis Cournoyer,avah@kymabatteries.com,12187507609,5,no,
+"James ""Jimmy"" Kurcz","Intern, Engineering",Engineering,Dan Domikaitis,james@kymabatteries.com,19498440348,6,yes,Jimmy 2 .tif
+Hans Devouassoux,Sr. Reintroduction Specialist,Engineering,Dan Domikaitis,hans@kymabatteries.com,17606078727,7,yes,Hans-White-Background.tif
