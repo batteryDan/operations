@@ -2,8 +2,8 @@ from rembg import remove
 from PIL import Image
 
 # Define the path to the input and output images
-input_path = r'C:\_git\operations\headshots\john.jpg'
-output_path = r'C:\_git\operations\headshots\john.jpg'
+input_path = r'C:\_git\operations\headshots\angel.jpg'
+output_path = r'C:\_git\operations\headshots\angel.jpg'
 
 # Open the input image
 with Image.open(input_path) as img:

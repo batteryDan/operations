@@ -34,8 +34,8 @@
             stroke-width: 2px;
         }
         #chart-container {
-            width: 60vw; /* Adjusted width */
-            height: 80vh; /* More vertical space */
+            width: 95vw; /* Adjusted width */
+            height: 95vh; /* More vertical space */
             overflow: auto; /* Enable scrolling */
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             margin: 20px;
@@ -47,7 +47,7 @@
             border: 1px solid #ddd; /* Light border */
             background-color: #f0f0f0;
             width: 30vw; /* Fixed width for the details section */
-            height: 80vh; /* Match the chart's height */
+            height: 40vh; /* Match the chart's height */
             overflow-y: auto; /* Allow scrolling if needed */
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             margin: 20px;
@@ -79,7 +79,7 @@
             color: #004499;
         }
         svg {
-            width: 150%;
+            width: 100%;
             height: 100%;
         }
     </style>
@@ -102,8 +102,8 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script>
         var margin = {top: 20, right: 20, bottom: 20, left: 100}, // Increased left margin for better positioning
-            width = 1500, // Set a fixed width for the viewBox
-            height = 800; // Set a fixed height for the viewBox
+            width = 1500,  // Set a fixed width for the viewBox
+            height = 800;  // Set a fixed height for the viewBox
 
         var svg = d3.select("svg")
             .attr("width", "100%")
@@ -116,13 +116,14 @@
             duration = 750,
             root;
 
-        var tree = d3.tree().size([height, width]);
+        // Use nodeSize() to control separation between nodes
+        var tree = d3.tree().nodeSize([90, 100]);  // Adjust width and height spacing between nodes
 
         var stratify = d3.stratify()
             .id(function(d) { return d.name; })
             .parentId(function(d) { return d.reportsTo; });
 
-        d3.csv("orgChart.csv").then(function(data) {
+        d3.csv("/orgChart.csv").then(function(data) {
             data = data.filter(function(d) { return d.active.toLowerCase() === "yes"; });
 
             // Convert employee number to integer for correct sorting
@@ -148,12 +149,17 @@
             console.error("Error loading or parsing data:", error);
         });
 
+
         function update(source) {
             var treeData = tree(root),
                 nodes = treeData.descendants(),
                 links = treeData.descendants().slice(1);
 
-            nodes.forEach(function(d){ d.y = d.depth * (width / 4) * 0.9 }); // Shrink by 10%
+            // Modify horizontal and vertical spacing between nodes
+            nodes.forEach(function(d) {
+                d.y = d.depth * 400;  // Horizontal distance between nodes
+                d.x = d.x * 1.6;      // Vertical distance between nodes
+            });
 
             var node = svg.selectAll('g.node')
                 .data(nodes, function(d) { return d.id || (d.id = ++i); });
@@ -169,11 +175,11 @@
             
             var baseSize = Math.max(44, width * 0.01); // Base size remains constant
             var imageSize = baseSize * 2.5; // Increase image size more significantly
-            var circleSize = baseSize * 1.7; // Circle size constant
+            var circleSize = baseSize * 2.5; // Circle size constant
             
             nodeEnter.append("image")
                 .attr("xlink:href", function(d) {
-                    return "headshots/" + d.data.headshotFile; // Dynamically set the image path
+                    return "headshots/final/" + d.data.headshotFile;  // Use the correct subdirectory path
                 })
                 .attr("x", -imageSize / 2) // Center the image
                 .attr("y", -imageSize / 2) // Center the image
@@ -182,12 +188,12 @@
             
             nodeEnter.append('circle')
                 .attr('class', 'click-overlay')
-                .attr('r', circleSize / 2) // Circle radius
-                .attr("fill", "none") // Explicitly set fill to none here
-                .style("stroke", "steelblue") // Stroke color
-                .style("stroke-width", "3px") // Stroke width
-                .style("fill", "none"); // Ensure fill is set to none in style as well
-                .style("pointer-events", "all"); // This captures all click events
+                .attr('r', circleSize / 2)
+                .attr("fill", "none")
+                .style("stroke", "steelblue")
+                .style("stroke-width", "3px")
+                .style("fill", "none")
+                .style("pointer-events", "all");
 
             nodeEnter.append('text')
                 .attr("dy", (circleSize / 2) + 20) // Position text below the image
@@ -234,16 +240,26 @@
                 })
                 .remove();
 
+            // Automatically adjust the SVG view to fit the entire chart within the container
+            var bounds = svg.node().getBBox(),
+                scale = Math.min(width / bounds.width, height / bounds.height) * 0.08,
+                translateX = (width - bounds.width) * 0.1,
+                translateY = (height - bounds.height) * 0.9;
+
+            svg.transition()
+                .duration(750)
+                .attr("transform", "translate(" + translateX + "," + translateY + ") scale(" + scale + ")");
+
             nodes.forEach(function(d){
                 d.x0 = d.x;
                 d.y0 = d.y;
             });
 
             function diagonal(s, d) {
-                path = `M ${s.y} ${s.x}
-                        C ${(s.y + d.y) / 2} ${s.x},
-                          ${(s.y + d.y) / 2} ${d.x},
-                          ${d.y} ${d.x}`;
+                var path = `M ${s.y} ${s.x}
+                            C ${(s.y + d.y) / 2} ${s.x},
+                              ${(s.y + d.y) / 2} ${d.x},
+                              ${d.y} ${d.x}`;
 
                 return path;
             }
@@ -305,3 +321,4 @@
     </script>
 </body>
 </html>
+               

@@ -1,9 +1,24 @@
 ﻿name,title,department,reportsTo,email,phone,employee#,active,headshotFile
-Travis Cournoyer,CEO,C-Suite,,travis@kymabatteries.com,14015950109,0,yes,Travis 2 WB.tif
-Dan Domikaitis,VP of Engineering,Engineering,Travis Cournoyer,dan@kymabatteries.com,14072566950,1,yes,Dan 2 WB.tif
-Ana Soplavic,"Director, Strategic Operations",Operations,Travis Cournoyer,ana@kymabatteries.com,15622543170,2,yes,Ana 2 WB.tif
-"John ""Wes"" Riley",Sr. Reintroduction Specialist,Engineering,Dan Domikaitis,wes@kymabatteries.com,19499297816,3,yes,Wes-White-Background.tif
-Kate Schlag,"Director, Marketing and Communications",Communications,Travis Cournoyer,kate@kymabatteries.com,18082987825,4,yes,_U3A1337.CR2
-Avah Kraushaar,"Intern, Finance",Finance,Travis Cournoyer,avah@kymabatteries.com,12187507609,5,no,
-"James ""Jimmy"" Kurcz","Intern, Engineering",Engineering,Dan Domikaitis,james@kymabatteries.com,19498440348,6,yes,Jimmy 2 .tif
-Hans Devouassoux,Sr. Reintroduction Specialist,Engineering,Dan Domikaitis,hans@kymabatteries.com,17606078727,7,yes,Hans-White-Background.tif
+David J. Durrett,CEO,C-Suite,,,,0,yes,dave.jpg
+Dan Domikaitis,VP of Engineering,Engineering,Frederick Van Heerden,dan@kymabatteries.com,+14072566950,1,yes,dan.jpg
+Ana Sopalovic,"Director, Strategic Operations",Operations,Frederick Van Heerden,ana@kymabatteries.com,+15622543170,2,yes,ana.jpg
+"John ""Wes"" Riley",Sr. Reintroduction Specialist,Engineering,Dan Domikaitis,wes@kymabatteries.com,+19499297816,3,yes,wes.jpg
+Kate Schlag,"Director, Marketing and Communications",Communications,Frederick Van Heerden,kate@kymabatteries.com,+18082987825,4,yes,kate.jpg
+Avah Kraushaar,"Intern, Finance",Finance,Ana Sopalovic,avah@kymabatteries.com,+12187507609,5,no,avah.jpg
+"James ""Jimmy"" Kurcz","Intern, Engineering",Engineering,Dan Domikaitis,james@kymabatteries.com,+19498440348,6,no,jimmy.jpg
+Hans Devouassoux,Sr. Reintroduction Specialist,Engineering,Dan Domikaitis,hans@kymabatteries.com,+17606078727,7,yes,hans.jpg
+Frederick Van Heerden,COO,C-Suite,David J. Durrett,vanheerden@kymabatteries.com,+19188097643,8,yes,frikkie.jpg
+Sulo Pandey,Accounts Payable Coordinator,Finance,Ana Sopalovic,sulo@kymabatteries.com,+13479755129,9,yes,sulo.jpg
+John Yeboah,Head of Software (Contract),Engineering,Dan Domikaitis,john@kymabatteries.com,+447752830355,10,yes,john.jpg
+Jaiden Walmsley,Structures Lead (Contract),Engineering,Dan Domikaitis,jaiden@kymabatteries.com,+64210504549,11,yes,jaiden.jpg
+Rabita Chabrota,Mechatronics,Engineering,Dan Domikaitis,rabita@kymabatteries.com,+15102107598,12,yes,rabita.jpg
+Ross McCulloch,Head of Harnessing (Contract),Engineering,Dan Domikaitis,mcculloch@kymabatteries.com,+17706561001,13,yes,ross.jpg
+Nicole Randall,Harnessing Program Manager (Contract),Engineering,Ross McCulloch,randall@kymabatteries.com,,14,yes,nicole.jpg
+Ibraham Hassan,EDS Engineer II,Engineering,Ross McCulloch,hassan@kymabatteries.com,,15,yes,kyma_logo.jpg
+Arnel Baldovino,EDS Engineering Tech III,Engineering,Ross McCulloch,baldovino@kymabatteries.com,,16,yes,arnel.jpg
+Darren Birks,Software Developer,Engineering,John Yeboah,birks@kymabatteries.com,,17,yes,kyma_logo.jpg
+Angel Durrett,President,Operations,David J. Durrett,,,18,yes,angel.jpg
+Nitin Garg,Hydrodynamicist Lead (Contract),Engineering,Dan Domikaitis,,,19,yes,nitin.jpg
+Tammy Geisler,Director to CEO,Operations,David J. Durrett,,,20,yes,kyma_logo.jpg
+Emily Graber,Controller,Operations,Angel Durrett,,,21,yes,kyma_logo.jpg
+Nicole Panhoff,CHRO (Chief Human Resources Officer),Operations,David J. Durrett,,,22,yes,kyma_logo.jpg
