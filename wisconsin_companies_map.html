@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_605b27f53253db254cc03fbe6bec5ec4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_605b27f53253db254cc03fbe6bec5ec4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_605b27f53253db254cc03fbe6bec5ec4 = L.map(
+                "map_605b27f53253db254cc03fbe6bec5ec4",
+                {
+                    center: [44.9369, -91.3929],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+
+            
+
+        
+    
+            var tile_layer_87a8640b83ff13e3854cd6c0bd09012d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_87a8640b83ff13e3854cd6c0bd09012d.addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+            var circle_3b4093ae0d9db380f4c58642c566c19f = L.circle(
+                [44.9369, -91.3929],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80500, "stroke": true, "weight": 3}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+            var circle_2511648bc051aa4e822d3f717733b894 = L.circle(
+                [44.9369, -91.3929],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 161000, "stroke": true, "weight": 3}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+            var marker_00f54563a2006289c68bfd9fa10291df = L.marker(
+                [44.937, -91.392],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_d29ce6c16e563ce0ecf143300571a43f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff1fd3509fbff7fdca9e24a1b642856f = $(`<div id="html_ff1fd3509fbff7fdca9e24a1b642856f" style="width: 100.0%; height: 100.0%;">Wisconsin Metal Fab: Metal fabrication, custom steel work, large-scale manufacturing. Website: www.wimetalfab.com | Phone: 715-720-1794</div>`)[0];
+                popup_d29ce6c16e563ce0ecf143300571a43f.setContent(html_ff1fd3509fbff7fdca9e24a1b642856f);
+            
+        
+
+        marker_00f54563a2006289c68bfd9fa10291df.bindPopup(popup_d29ce6c16e563ce0ecf143300571a43f)
+        ;
+
+        
+    
+    
+            var marker_38029fcea1cd6b557a22b4ee7efbedb4 = L.marker(
+                [44.912, -91.423],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_636721b0f637d1d93ef1ce9e06dbdc24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62ae2deb6b8e9156868b5ae9c3594458 = $(`<div id="html_62ae2deb6b8e9156868b5ae9c3594458" style="width: 100.0%; height: 100.0%;">KNG Mechanical: HVAC systems, sheet metal fabrication, mechanical contracting. Phone: 715-832-1371</div>`)[0];
+                popup_636721b0f637d1d93ef1ce9e06dbdc24.setContent(html_62ae2deb6b8e9156868b5ae9c3594458);
+            
+        
+
+        marker_38029fcea1cd6b557a22b4ee7efbedb4.bindPopup(popup_636721b0f637d1d93ef1ce9e06dbdc24)
+        ;
+
+        
+    
+    
+            var marker_359efeec20603c4b78f0167dfab2786f = L.marker(
+                [45.247, -91.13],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_bd4b83cc4a1051385e56761f348c3a20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6e341d954ddb53ace06124945218c6f = $(`<div id="html_b6e341d954ddb53ace06124945218c6f" style="width: 100.0%; height: 100.0%;">JJC Custom Fabrication: Custom metal fabrication, prototyping, structural components.</div>`)[0];
+                popup_bd4b83cc4a1051385e56761f348c3a20.setContent(html_b6e341d954ddb53ace06124945218c6f);
+            
+        
+
+        marker_359efeec20603c4b78f0167dfab2786f.bindPopup(popup_bd4b83cc4a1051385e56761f348c3a20)
+        ;
+
+        
+    
+    
+            var marker_13636c76a0c93c465f1f8ce4b0338cfa = L.marker(
+                [43.011, -88.231],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_25b18031c787c2974439751f17438499 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eef2a4f003a7c320b5effae07fe01c10 = $(`<div id="html_eef2a4f003a7c320b5effae07fe01c10" style="width: 100.0%; height: 100.0%;">Wisconsin Metalworking Machinery Inc: Sales, repair of metalworking machinery, industrial tools. Website: www.wimetalmachinery.com | Phone: 262-548-6080</div>`)[0];
+                popup_25b18031c787c2974439751f17438499.setContent(html_eef2a4f003a7c320b5effae07fe01c10);
+            
+        
+
+        marker_13636c76a0c93c465f1f8ce4b0338cfa.bindPopup(popup_25b18031c787c2974439751f17438499)
+        ;
+
+        
+    
+    
+            var marker_d4ed4ab09a3a18aa7589ba4d8cfe57b8 = L.marker(
+                [44.357, -89.084],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_cdfe630b98181992d8272b87c2244c76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03570803095518cfd0ef5250e4e2284d = $(`<div id="html_03570803095518cfd0ef5250e4e2284d" style="width: 100.0%; height: 100.0%;">CM Centerline Machine, LLC: Precision machining, turning, milling for industrial sectors. Phone: 715-258-6000</div>`)[0];
+                popup_cdfe630b98181992d8272b87c2244c76.setContent(html_03570803095518cfd0ef5250e4e2284d);
+            
+        
+
+        marker_d4ed4ab09a3a18aa7589ba4d8cfe57b8.bindPopup(popup_cdfe630b98181992d8272b87c2244c76)
+        ;
+
+        
+    
+    
+            var marker_c89b57432c20ffa6ef7183b7246200ab = L.marker(
+                [43.914, -88.03],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_fcd1e897a00831156dcd2c14baafb8e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9957f9b9d4ce815b6f3f7d86f564519 = $(`<div id="html_a9957f9b9d4ce815b6f3f7d86f564519" style="width: 100.0%; height: 100.0%;">Kiel Machine Works, Inc.: CNC machining, custom parts manufacturing, repair services.</div>`)[0];
+                popup_fcd1e897a00831156dcd2c14baafb8e9.setContent(html_a9957f9b9d4ce815b6f3f7d86f564519);
+            
+        
+
+        marker_c89b57432c20ffa6ef7183b7246200ab.bindPopup(popup_fcd1e897a00831156dcd2c14baafb8e9)
+        ;
+
+        
+    
+    
+            var marker_51f327e97f59c554b9efd44ca790f80f = L.marker(
+                [42.508, -89.031],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_f87df6a38a5d53b6a2c63c1abc490dd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_553eee712e62635e0cabf0f1d0f91fd3 = $(`<div id="html_553eee712e62635e0cabf0f1d0f91fd3" style="width: 100.0%; height: 100.0%;">Summit Machine Works: General machining, small-scale manufacturing, repair services.</div>`)[0];
+                popup_f87df6a38a5d53b6a2c63c1abc490dd6.setContent(html_553eee712e62635e0cabf0f1d0f91fd3);
+            
+        
+
+        marker_51f327e97f59c554b9efd44ca790f80f.bindPopup(popup_f87df6a38a5d53b6a2c63c1abc490dd6)
+        ;
+
+        
+    
+    
+            var marker_cad3e5201999e1b2a0783e95d755fced = L.marker(
+                [44.937, -91.392],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_6ede1a3293f7b17cef4406eabb79eb9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc650b38655b72d8b815a53d1e45bef6 = $(`<div id="html_dc650b38655b72d8b815a53d1e45bef6" style="width: 100.0%; height: 100.0%;">Pioneer Metal Finishing: Metal finishing, anodizing, plating services. Website: www.pioneermetal.com</div>`)[0];
+                popup_6ede1a3293f7b17cef4406eabb79eb9a.setContent(html_dc650b38655b72d8b815a53d1e45bef6);
+            
+        
+
+        marker_cad3e5201999e1b2a0783e95d755fced.bindPopup(popup_6ede1a3293f7b17cef4406eabb79eb9a)
+        ;
+
+        
+    
+    
+            var marker_5cf1680225949ec4116e2cf6e9b24334 = L.marker(
+                [44.936, -91.392],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_14e1660953312463940797e648cbe1e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f45dc06b6b29bd690b50fd23ff6e6b27 = $(`<div id="html_f45dc06b6b29bd690b50fd23ff6e6b27" style="width: 100.0%; height: 100.0%;">Michaud Machining: Precision machining, automotive, biomedical sectors. Phone: 715-720-6224</div>`)[0];
+                popup_14e1660953312463940797e648cbe1e1.setContent(html_f45dc06b6b29bd690b50fd23ff6e6b27);
+            
+        
+
+        marker_5cf1680225949ec4116e2cf6e9b24334.bindPopup(popup_14e1660953312463940797e648cbe1e1)
+        ;
+
+        
+    
+    
+            var marker_bc54a9f716976445b4a90f4881a145b7 = L.marker(
+                [44.94, -91.392],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_df3d89aed6b0d0e7dc374b7c5899180b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74a7f50d7a8fac1bf4eac139486249bc = $(`<div id="html_74a7f50d7a8fac1bf4eac139486249bc" style="width: 100.0%; height: 100.0%;">Machine Industries: CNC lathe, milling, custom fabrication, grinding services.</div>`)[0];
+                popup_df3d89aed6b0d0e7dc374b7c5899180b.setContent(html_74a7f50d7a8fac1bf4eac139486249bc);
+            
+        
+
+        marker_bc54a9f716976445b4a90f4881a145b7.bindPopup(popup_df3d89aed6b0d0e7dc374b7c5899180b)
+        ;
+
+        
+    
+    
+            var marker_8f3b09db409cc648a7a3d68a5df30512 = L.marker(
+                [44.897, -91.413],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_f04f88a830029c9f9f4c1df32714d932 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d49edf21377e6884b0149639fd2e076 = $(`<div id="html_0d49edf21377e6884b0149639fd2e076" style="width: 100.0%; height: 100.0%;">Wissota Tool & Machine: Tooling, machinery repairs, custom components. Phone: 715-232-2994</div>`)[0];
+                popup_f04f88a830029c9f9f4c1df32714d932.setContent(html_0d49edf21377e6884b0149639fd2e076);
+            
+        
+
+        marker_8f3b09db409cc648a7a3d68a5df30512.bindPopup(popup_f04f88a830029c9f9f4c1df32714d932)
+        ;
+
+        
+    
+    
+            var marker_0abb3f38be01a8d2e3cd331408c6da65 = L.marker(
+                [44.668, -90.172],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_6831dc58f883edacd0a58cf1cf815b14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_115f6852d067a6bee78919ceee4c3ee6 = $(`<div id="html_115f6852d067a6bee78919ceee4c3ee6" style="width: 100.0%; height: 100.0%;">Hastreiter Industries: CNC milling, turning, aerospace, medical sectors. Website: www.hastreiterindustries.com | Phone: 715-387-4944</div>`)[0];
+                popup_6831dc58f883edacd0a58cf1cf815b14.setContent(html_115f6852d067a6bee78919ceee4c3ee6);
+            
+        
+
+        marker_0abb3f38be01a8d2e3cd331408c6da65.bindPopup(popup_6831dc58f883edacd0a58cf1cf815b14)
+        ;
+
+        
+    
+    
+            var marker_1cca2cdd55be113cdfb6e1690ec13420 = L.marker(
+                [44.81, -91.499],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_a08efa891d8ad2a2fbd1c6902795f7aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d4011333727179d41aa6a1f7a08791b = $(`<div id="html_9d4011333727179d41aa6a1f7a08791b" style="width: 100.0%; height: 100.0%;">Pro-Cise, Inc.: Custom parts, tooling, precision prototyping. Website: www.pro-cise.com | Phone: 715-838-9888</div>`)[0];
+                popup_a08efa891d8ad2a2fbd1c6902795f7aa.setContent(html_9d4011333727179d41aa6a1f7a08791b);
+            
+        
+
+        marker_1cca2cdd55be113cdfb6e1690ec13420.bindPopup(popup_a08efa891d8ad2a2fbd1c6902795f7aa)
+        ;
+
+        
+    
+    
+            var marker_a3e0290e3adb80697fc880d9284bbbb3 = L.marker(
+                [44.923, -91.383],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_f1eabafc0ee76d66be451875567a8367 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a0035f087f481f86c166eeadd4ce0a6 = $(`<div id="html_6a0035f087f481f86c166eeadd4ce0a6" style="width: 100.0%; height: 100.0%;">Turner Industries Inc.: Sheet metal fabrication, metal stamping, assembly.</div>`)[0];
+                popup_f1eabafc0ee76d66be451875567a8367.setContent(html_6a0035f087f481f86c166eeadd4ce0a6);
+            
+        
+
+        marker_a3e0290e3adb80697fc880d9284bbbb3.bindPopup(popup_f1eabafc0ee76d66be451875567a8367)
+        ;
+
+        
+    
+    
+            var marker_b1b7750a7babafb4f043f2d92078f6a2 = L.marker(
+                [45.22, -91.159],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_98db0096f2c5725849902838ef394961 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b2877ebcdc57465a1c7b34decbcf3ef = $(`<div id="html_9b2877ebcdc57465a1c7b34decbcf3ef" style="width: 100.0%; height: 100.0%;">A Plus Machine: Die-cast industry, in-house machining, prototyping.</div>`)[0];
+                popup_98db0096f2c5725849902838ef394961.setContent(html_9b2877ebcdc57465a1c7b34decbcf3ef);
+            
+        
+
+        marker_b1b7750a7babafb4f043f2d92078f6a2.bindPopup(popup_98db0096f2c5725849902838ef394961)
+        ;
+
+        
+    
+    
+            var marker_d6dfdfe316442bad1d9ec327046f03fb = L.marker(
+                [44.81, -91.503],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_2c2d156483df5e02dcc6aec6b32954d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbdc69aff445b6276f639d089bb15493 = $(`<div id="html_fbdc69aff445b6276f639d089bb15493" style="width: 100.0%; height: 100.0%;">Riverside Machine & Engineering: Tool design, consulting. Phone: 715-839-9991</div>`)[0];
+                popup_2c2d156483df5e02dcc6aec6b32954d3.setContent(html_fbdc69aff445b6276f639d089bb15493);
+            
+        
+
+        marker_d6dfdfe316442bad1d9ec327046f03fb.bindPopup(popup_2c2d156483df5e02dcc6aec6b32954d3)
+        ;
+
+        
+    
+    
+            var marker_25327de033005e00335111b4158fec93 = L.marker(
+                [45.105, -91.493],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_4e5e57e485409da24b7b824fb432dfa8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_925d10d0d3655a6732160d47d4fdfa44 = $(`<div id="html_925d10d0d3655a6732160d47d4fdfa44" style="width: 100.0%; height: 100.0%;">Bloomer Machine & Fab Inc.: Automotive machining, repairs, custom fabrications.</div>`)[0];
+                popup_4e5e57e485409da24b7b824fb432dfa8.setContent(html_925d10d0d3655a6732160d47d4fdfa44);
+            
+        
+
+        marker_25327de033005e00335111b4158fec93.bindPopup(popup_4e5e57e485409da24b7b824fb432dfa8)
+        ;
+
+        
+    
+    
+            var marker_6846d34036d983f305d5657625c49997 = L.marker(
+                [44.942, -91.396],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_7bd5970ea18b36489357c979bd6ba7e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75f21f5aa9c94ced3f15cc9ce310c8b7 = $(`<div id="html_75f21f5aa9c94ced3f15cc9ce310c8b7" style="width: 100.0%; height: 100.0%;">Limitless Precision Machining: CNC machining, prototyping, high-volume production.</div>`)[0];
+                popup_7bd5970ea18b36489357c979bd6ba7e2.setContent(html_75f21f5aa9c94ced3f15cc9ce310c8b7);
+            
+        
+
+        marker_6846d34036d983f305d5657625c49997.bindPopup(popup_7bd5970ea18b36489357c979bd6ba7e2)
+        ;
+
+        
+    
+    
+            var marker_b2b8f4fe74fdea84e3741bcbb3df287c = L.marker(
+                [44.811, -91.499],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_a8dd3c1079f7b6e15b6f0f7b7e1b9956 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db17bdd9dac50765d3c38c05e006d863 = $(`<div id="html_db17bdd9dac50765d3c38c05e006d863" style="width: 100.0%; height: 100.0%;">GLP Services: CNC machining, rapid prototyping. Phone: 715-308-7364</div>`)[0];
+                popup_a8dd3c1079f7b6e15b6f0f7b7e1b9956.setContent(html_db17bdd9dac50765d3c38c05e006d863);
+            
+        
+
+        marker_b2b8f4fe74fdea84e3741bcbb3df287c.bindPopup(popup_a8dd3c1079f7b6e15b6f0f7b7e1b9956)
+        ;
+
+        
+    
+    
+            var marker_3ef5477afc7ea0de733dd3f7c1bbdc07 = L.marker(
+                [45.378, -88.165],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_d467c9b806a0e136982ae26b71ab9708 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cf4e19ed007ec243e4503cfb5e3c57b = $(`<div id="html_4cf4e19ed007ec243e4503cfb5e3c57b" style="width: 100.0%; height: 100.0%;">Menco: Precision machining, sub-assemblies, custom fabrication. Website: www.menco.com | Phone: 715-504-0770</div>`)[0];
+                popup_d467c9b806a0e136982ae26b71ab9708.setContent(html_4cf4e19ed007ec243e4503cfb5e3c57b);
+            
+        
+
+        marker_3ef5477afc7ea0de733dd3f7c1bbdc07.bindPopup(popup_d467c9b806a0e136982ae26b71ab9708)
+        ;
+
+        
+    
+    
+            var marker_f5401e4d1f9cee6a5e8a8dc7276d2eed = L.marker(
+                [45.085, -91.238],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_6a176736fd1ec1a86e09ff2b257e3e83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2376b3086650994083f0480461174c73 = $(`<div id="html_2376b3086650994083f0480461174c73" style="width: 100.0%; height: 100.0%;">Advanced Laser (Cadrex): Sheet metal fabrication, laser cutting. Website: www.cadrex.com</div>`)[0];
+                popup_6a176736fd1ec1a86e09ff2b257e3e83.setContent(html_2376b3086650994083f0480461174c73);
+            
+        
+
+        marker_f5401e4d1f9cee6a5e8a8dc7276d2eed.bindPopup(popup_6a176736fd1ec1a86e09ff2b257e3e83)
+        ;
+
+        
+    
+    
+            var marker_446a6dfd58c1a6933175ece9485df2f9 = L.marker(
+                [44.93, -91.347],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_12168cadf42397221e7d0ef3d72c37f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4210d5c0fb444e7ce27b846f30d16695 = $(`<div id="html_4210d5c0fb444e7ce27b846f30d16695" style="width: 100.0%; height: 100.0%;">Extreme Machine LLC: CNC machining, tooling, custom fabrication.</div>`)[0];
+                popup_12168cadf42397221e7d0ef3d72c37f3.setContent(html_4210d5c0fb444e7ce27b846f30d16695);
+            
+        
+
+        marker_446a6dfd58c1a6933175ece9485df2f9.bindPopup(popup_12168cadf42397221e7d0ef3d72c37f3)
+        ;
+
+        
+    
+    
+            var marker_f4a5997dc8097998480e83bbc14f12c4 = L.marker(
+                [45.0, -93.252],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_efcf1053949650ff4bd54cc7a1df1f42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5773793f9b47a3d2edb925bc726d79cf = $(`<div id="html_5773793f9b47a3d2edb925bc726d79cf" style="width: 100.0%; height: 100.0%;">Kurt Machining: 5-axis CNC machining, assembly services. Website: www.kurtmachining.com | Phone: 763-572-1500</div>`)[0];
+                popup_efcf1053949650ff4bd54cc7a1df1f42.setContent(html_5773793f9b47a3d2edb925bc726d79cf);
+            
+        
+
+        marker_f4a5997dc8097998480e83bbc14f12c4.bindPopup(popup_efcf1053949650ff4bd54cc7a1df1f42)
+        ;
+
+        
+    
+    
+            var marker_07e8305428e18d214060f2c004df5e03 = L.marker(
+                [44.979, -93.263],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_2f40b8298cc93aabefceeb6aeb8fd499 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eeb73ab769c4a39c73fef50d1eb979bc = $(`<div id="html_eeb73ab769c4a39c73fef50d1eb979bc" style="width: 100.0%; height: 100.0%;">Cass Precision Machining: Swiss machining, rapid prototyping. Website: www.cassprecisionmachining.com | Phone: 612-588-2258</div>`)[0];
+                popup_2f40b8298cc93aabefceeb6aeb8fd499.setContent(html_eeb73ab769c4a39c73fef50d1eb979bc);
+            
+        
+
+        marker_07e8305428e18d214060f2c004df5e03.bindPopup(popup_2f40b8298cc93aabefceeb6aeb8fd499)
+        ;
+
+        
+    
+    
+            var marker_77408090b2b87ad5c0adf5fd6133070d = L.marker(
+                [45.038, -93.295],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_5b1ca303580b6d534b10f764271dddfd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bd6a6e53297745aa93445281af39c96 = $(`<div id="html_6bd6a6e53297745aa93445281af39c96" style="width: 100.0%; height: 100.0%;">Vision Machine Inc.: CNC machining, fabrication, prototypes. Website: www.visionmachinemn.com | Phone: 763-354-7697</div>`)[0];
+                popup_5b1ca303580b6d534b10f764271dddfd.setContent(html_6bd6a6e53297745aa93445281af39c96);
+            
+        
+
+        marker_77408090b2b87ad5c0adf5fd6133070d.bindPopup(popup_5b1ca303580b6d534b10f764271dddfd)
+        ;
+
+        
+    
+    
+            var marker_a6f1702480774c0f76fae6b3e4282d10 = L.marker(
+                [44.767, -93.277],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_d5e7f92360cccad3d6d0e7a66dc55d8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f121fb54ecd163f42ae981122337563 = $(`<div id="html_0f121fb54ecd163f42ae981122337563" style="width: 100.0%; height: 100.0%;">Batten Tool & Machine: Milling, turning, grinding, prototypes. Phone: 952-942-9198</div>`)[0];
+                popup_d5e7f92360cccad3d6d0e7a66dc55d8b.setContent(html_0f121fb54ecd163f42ae981122337563);
+            
+        
+
+        marker_a6f1702480774c0f76fae6b3e4282d10.bindPopup(popup_d5e7f92360cccad3d6d0e7a66dc55d8b)
+        ;
+
+        
+    
+    
+            var marker_60234ee2b83b3182632867dbf3e5410a = L.marker(
+                [44.98, -93.263],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_e6d084c373d90e6af0202a3df7676f3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3e963365b332e16c1f1f43658ecff83 = $(`<div id="html_d3e963365b332e16c1f1f43658ecff83" style="width: 100.0%; height: 100.0%;">AT Precision: Contract manufacturing, high-volume production. Phone: 847-509-5848</div>`)[0];
+                popup_e6d084c373d90e6af0202a3df7676f3c.setContent(html_d3e963365b332e16c1f1f43658ecff83);
+            
+        
+
+        marker_60234ee2b83b3182632867dbf3e5410a.bindPopup(popup_e6d084c373d90e6af0202a3df7676f3c)
+        ;
+
+        
+    
+    
+            var marker_b600860e605f1fb7106b18110a752996 = L.marker(
+                [45.272, -93.249],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_7be3101f1715337b462bf42d3e3db8ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23afb7a8ad438cbab49268e417a46b19 = $(`<div id="html_23afb7a8ad438cbab49268e417a46b19" style="width: 100.0%; height: 100.0%;">GBS Engineering: Batch production, custom machining. Phone: 763-757-3740</div>`)[0];
+                popup_7be3101f1715337b462bf42d3e3db8ca.setContent(html_23afb7a8ad438cbab49268e417a46b19);
+            
+        
+
+        marker_b600860e605f1fb7106b18110a752996.bindPopup(popup_7be3101f1715337b462bf42d3e3db8ca)
+        ;
+
+        
+    
+    
+            var marker_5b128e26dbc62a0e11f1df9d330dd8d9 = L.marker(
+                [44.95, -93.1],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_0015df5ba799511cd8096ec064e9121b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a04c6b5eed3a3815c80812d6ffa56df = $(`<div id="html_8a04c6b5eed3a3815c80812d6ffa56df" style="width: 100.0%; height: 100.0%;">Protofab Engineering: EDM services, anodizing, prototypes. Website: www.protofab.com</div>`)[0];
+                popup_0015df5ba799511cd8096ec064e9121b.setContent(html_8a04c6b5eed3a3815c80812d6ffa56df);
+            
+        
+
+        marker_5b128e26dbc62a0e11f1df9d330dd8d9.bindPopup(popup_0015df5ba799511cd8096ec064e9121b)
+        ;
+
+        
+    
+    
+            var marker_3d0f68571a86433eb43270cbcb8bfbdf = L.marker(
+                [43.824, -91.226],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_2ff65a6ac6ffedfbbfe0ed8cff5139a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af168800954583e508d1d67dcf29c993 = $(`<div id="html_af168800954583e508d1d67dcf29c993" style="width: 100.0%; height: 100.0%;">C & C Machine Inc.: CNC machining, metal fabrication. Phone: 608-784-4427 | Website: www.ccmachineinc.com</div>`)[0];
+                popup_2ff65a6ac6ffedfbbfe0ed8cff5139a3.setContent(html_af168800954583e508d1d67dcf29c993);
+            
+        
+
+        marker_3d0f68571a86433eb43270cbcb8bfbdf.bindPopup(popup_2ff65a6ac6ffedfbbfe0ed8cff5139a3)
+        ;
+
+        
+    
+    
+            var marker_919e68c4b3e4901fa88d190ec039456a = L.marker(
+                [43.858, -91.262],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_2b2a895f93c77fd06dba4665783ab315 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_141e08d70ea0851896abcc2496c09332 = $(`<div id="html_141e08d70ea0851896abcc2496c09332" style="width: 100.0%; height: 100.0%;">MTI Manufacturing: Precision CNC machining and valves. Phone: 608-783-0400 | Website: www.mtimanufacturing.com</div>`)[0];
+                popup_2b2a895f93c77fd06dba4665783ab315.setContent(html_141e08d70ea0851896abcc2496c09332);
+            
+        
+
+        marker_919e68c4b3e4901fa88d190ec039456a.bindPopup(popup_2b2a895f93c77fd06dba4665783ab315)
+        ;
+
+        
+    
+    
+            var marker_510e1cac868eab7210da5500cffa84d3 = L.marker(
+                [43.802, -91.256],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_6fc626b7acd49ea2d255113a7204c1e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a05e7eda13f379463b21712c415a2be = $(`<div id="html_7a05e7eda13f379463b21712c415a2be" style="width: 100.0%; height: 100.0%;">Mid-City Steel Inc.: Metal cutting, forming, and fabrication. Phone: 608-782-1325</div>`)[0];
+                popup_6fc626b7acd49ea2d255113a7204c1e9.setContent(html_7a05e7eda13f379463b21712c415a2be);
+            
+        
+
+        marker_510e1cac868eab7210da5500cffa84d3.bindPopup(popup_6fc626b7acd49ea2d255113a7204c1e9)
+        ;
+
+        
+    
+    
+            var marker_1c45c55434b237dc05f3a9dcdfc9c4cd = L.marker(
+                [43.842, -91.216],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_3ac06091ef0d1429e7d969d339d50973 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e2d0e037c627c8c6a6620dcea50e3aa = $(`<div id="html_0e2d0e037c627c8c6a6620dcea50e3aa" style="width: 100.0%; height: 100.0%;">River Steel: Full-service steel fabrication. Phone: 608-785-0525 | Website: www.riversteel.com</div>`)[0];
+                popup_3ac06091ef0d1429e7d969d339d50973.setContent(html_0e2d0e037c627c8c6a6620dcea50e3aa);
+            
+        
+
+        marker_1c45c55434b237dc05f3a9dcdfc9c4cd.bindPopup(popup_3ac06091ef0d1429e7d969d339d50973)
+        ;
+
+        
+    
+    
+            var marker_0bc652bf9e33e50b5d73bc37831e4c87 = L.marker(
+                [43.9, -91.072],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_65540398e43a003c95cdf1d8dd789c86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_788ccf7095c5b2aa05d3f26c5e3638d0 = $(`<div id="html_788ccf7095c5b2aa05d3f26c5e3638d0" style="width: 100.0%; height: 100.0%;">West Salem Tool & Die: Tooling, hydraulic systems. Phone: 608-786-1104 | Website: www.westsalemtool.com</div>`)[0];
+                popup_65540398e43a003c95cdf1d8dd789c86.setContent(html_788ccf7095c5b2aa05d3f26c5e3638d0);
+            
+        
+
+        marker_0bc652bf9e33e50b5d73bc37831e4c87.bindPopup(popup_65540398e43a003c95cdf1d8dd789c86)
+        ;
+
+        
+    
+    
+            var marker_80122db34276afa90be084d074920e7f = L.marker(
+                [44.02, -92.469],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_953d30ab30fe6e6dd698c4886afe225b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b39283516e8eaee388ba41cae39efb9d = $(`<div id="html_b39283516e8eaee388ba41cae39efb9d" style="width: 100.0%; height: 100.0%;">Rochester Precision Machine: CNC machining, milling, turning. Phone: 507-289-7381 | Website: www.rochcnc.com</div>`)[0];
+                popup_953d30ab30fe6e6dd698c4886afe225b.setContent(html_b39283516e8eaee388ba41cae39efb9d);
+            
+        
+
+        marker_80122db34276afa90be084d074920e7f.bindPopup(popup_953d30ab30fe6e6dd698c4886afe225b)
+        ;
+
+        
+    
+    
+            var marker_19cb61e681cba9c73ba618c102aa9be3 = L.marker(
+                [44.058, -92.514],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_98e8ef07f5765bbc14213cda26a3634b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b80b336599491e6c5269453d55df771d = $(`<div id="html_b80b336599491e6c5269453d55df771d" style="width: 100.0%; height: 100.0%;">Bowman Tool & Machining: CNC automation, precision machining. Phone: 507-286-1400 | Website: www.btmcnc.com</div>`)[0];
+                popup_98e8ef07f5765bbc14213cda26a3634b.setContent(html_b80b336599491e6c5269453d55df771d);
+            
+        
+
+        marker_19cb61e681cba9c73ba618c102aa9be3.bindPopup(popup_98e8ef07f5765bbc14213cda26a3634b)
+        ;
+
+        
+    
+    
+            var marker_2c0cf40467d62306d0a18b89cec010da = L.marker(
+                [44.015, -92.469],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_281ad5ee2a312dfbec6567573aafe51c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_644a503270547c8746718a1bd5f90852 = $(`<div id="html_644a503270547c8746718a1bd5f90852" style="width: 100.0%; height: 100.0%;">Active Tool & Die: Custom tooling, precision machining. Phone: 507-932-3363</div>`)[0];
+                popup_281ad5ee2a312dfbec6567573aafe51c.setContent(html_644a503270547c8746718a1bd5f90852);
+            
+        
+
+        marker_2c0cf40467d62306d0a18b89cec010da.bindPopup(popup_281ad5ee2a312dfbec6567573aafe51c)
+        ;
+
+        
+    
+    
+            var marker_6387e4a2bfc8d3cadd1fedcd20deb39d = L.marker(
+                [43.984, -92.479],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_5182dad932f15403f3b5925fc5a933ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57c2d5582646f3336e61046cc8f894b4 = $(`<div id="html_57c2d5582646f3336e61046cc8f894b4" style="width: 100.0%; height: 100.0%;">RAM Tool Inc.: Contract milling, die-casting. Phone: 262-375-3036 | Website: www.ramtoolinc.com</div>`)[0];
+                popup_5182dad932f15403f3b5925fc5a933ad.setContent(html_57c2d5582646f3336e61046cc8f894b4);
+            
+        
+
+        marker_6387e4a2bfc8d3cadd1fedcd20deb39d.bindPopup(popup_5182dad932f15403f3b5925fc5a933ad)
+        ;
+
+        
+    
+    
+            var marker_b85fa1bc21c29b15eb26338b645e2839 = L.marker(
+                [44.022, -92.488],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_ca8efcbb5fedd938448818a737a51ef3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_984730d7e1a7692e46311fe94fb9f01b = $(`<div id="html_984730d7e1a7692e46311fe94fb9f01b" style="width: 100.0%; height: 100.0%;">Domaille Engineering: EDM, CNC manufacturing. Phone: 507-281-0275 | Website: www.domailleengineering.com</div>`)[0];
+                popup_ca8efcbb5fedd938448818a737a51ef3.setContent(html_984730d7e1a7692e46311fe94fb9f01b);
+            
+        
+
+        marker_b85fa1bc21c29b15eb26338b645e2839.bindPopup(popup_ca8efcbb5fedd938448818a737a51ef3)
+        ;
+
+        
+    
+    
+            var marker_a054fe1bd5bb7c4961c3aed2355c67f3 = L.marker(
+                [43.073, -89.401],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_8faa0494ebc317c903a64a27a64979d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84c8890d7b2887bc55abdc2c714787d5 = $(`<div id="html_84c8890d7b2887bc55abdc2c714787d5" style="width: 100.0%; height: 100.0%;">Madison Cutting Technologies: Precision CNC cutting and milling. Phone: 608-271-7999</div>`)[0];
+                popup_8faa0494ebc317c903a64a27a64979d3.setContent(html_84c8890d7b2887bc55abdc2c714787d5);
+            
+        
+
+        marker_a054fe1bd5bb7c4961c3aed2355c67f3.bindPopup(popup_8faa0494ebc317c903a64a27a64979d3)
+        ;
+
+        
+    
+    
+            var marker_3dd09cf5b66a0c9f65878db2e6835c64 = L.marker(
+                [43.075, -89.383],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_043c7266426fa3bed989aba40928de6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81f234ebaf1446af9009200a5e6229ac = $(`<div id="html_81f234ebaf1446af9009200a5e6229ac" style="width: 100.0%; height: 100.0%;">Moxley Machine & Tool: CNC machining and manufacturing. Phone: 608-238-0245</div>`)[0];
+                popup_043c7266426fa3bed989aba40928de6a.setContent(html_81f234ebaf1446af9009200a5e6229ac);
+            
+        
+
+        marker_3dd09cf5b66a0c9f65878db2e6835c64.bindPopup(popup_043c7266426fa3bed989aba40928de6a)
+        ;
+
+        
+    
+    
+            var marker_af51096f5ccd6d0864d25a47bf1c83dd = L.marker(
+                [43.074, -89.408],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_668df7121aebc1416ec6af526ea49c05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c756a6cea733a37217f32a81dd45c09 = $(`<div id="html_7c756a6cea733a37217f32a81dd45c09" style="width: 100.0%; height: 100.0%;">Midwest Prototyping: Additive manufacturing, CNC prototypes. Website: www.midwestproto.com</div>`)[0];
+                popup_668df7121aebc1416ec6af526ea49c05.setContent(html_7c756a6cea733a37217f32a81dd45c09);
+            
+        
+
+        marker_af51096f5ccd6d0864d25a47bf1c83dd.bindPopup(popup_668df7121aebc1416ec6af526ea49c05)
+        ;
+
+        
+    
+    
+            var marker_903098d1799d60a23469c4ec1a01d3b8 = L.marker(
+                [43.072, -89.407],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_239849169542543e51e04ade78ff1801 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52b2f28c5c743b755f4e5b8b118ec988 = $(`<div id="html_52b2f28c5c743b755f4e5b8b118ec988" style="width: 100.0%; height: 100.0%;">Neesvig Industries: Machining, commercial fabrication. Phone: 608-273-0600</div>`)[0];
+                popup_239849169542543e51e04ade78ff1801.setContent(html_52b2f28c5c743b755f4e5b8b118ec988);
+            
+        
+
+        marker_903098d1799d60a23469c4ec1a01d3b8.bindPopup(popup_239849169542543e51e04ade78ff1801)
+        ;
+
+        
+    
+    
+            var marker_0af9c554c0d4ecab3aa7b805059e9c58 = L.marker(
+                [43.077, -89.412],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_0b7e9da293407a0b3c00fa52edf5cf52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecfa0ac81cee0cd22706748b23d26b7f = $(`<div id="html_ecfa0ac81cee0cd22706748b23d26b7f" style="width: 100.0%; height: 100.0%;">Paragon Development Systems: Custom machining, prototyping. Website: www.pds.com</div>`)[0];
+                popup_0b7e9da293407a0b3c00fa52edf5cf52.setContent(html_ecfa0ac81cee0cd22706748b23d26b7f);
+            
+        
+
+        marker_0af9c554c0d4ecab3aa7b805059e9c58.bindPopup(popup_0b7e9da293407a0b3c00fa52edf5cf52)
+        ;
+
+        
+    
+    
+            var marker_20e06ff3d7ec651d4460fbf486e2ce21 = L.marker(
+                [43.038, -87.906],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_9a19ea47b342bb4931a4e7e45262c62f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_153ba5534b09654ede5aa8c1ffa69999 = $(`<div id="html_153ba5534b09654ede5aa8c1ffa69999" style="width: 100.0%; height: 100.0%;">Milwaukee Precision Machining: CNC machining, custom parts. Phone: 414-483-9555</div>`)[0];
+                popup_9a19ea47b342bb4931a4e7e45262c62f.setContent(html_153ba5534b09654ede5aa8c1ffa69999);
+            
+        
+
+        marker_20e06ff3d7ec651d4460fbf486e2ce21.bindPopup(popup_9a19ea47b342bb4931a4e7e45262c62f)
+        ;
+
+        
+    
+    
+            var marker_8dbbcec0549cb28317aff3f896950fbd = L.marker(
+                [43.039, -88.09],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_bca3babe0482443905015da2f403c05a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d0e69f079a1b96524f7e7353e2da3d7 = $(`<div id="html_9d0e69f079a1b96524f7e7353e2da3d7" style="width: 100.0%; height: 100.0%;">Gauthier Biomedical: Medical component manufacturing. Phone: 262-512-1615</div>`)[0];
+                popup_bca3babe0482443905015da2f403c05a.setContent(html_9d0e69f079a1b96524f7e7353e2da3d7);
+            
+        
+
+        marker_8dbbcec0549cb28317aff3f896950fbd.bindPopup(popup_bca3babe0482443905015da2f403c05a)
+        ;
+
+        
+    
+    
+            var marker_6f2cdd3a550d69613cae4ee0a48eb1ac = L.marker(
+                [43.034, -87.943],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_7339e2ac00c8692a928adc34f4335f59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df85c25e7277021132cc10a7c2f2bc75 = $(`<div id="html_df85c25e7277021132cc10a7c2f2bc75" style="width: 100.0%; height: 100.0%;">Superior Machine: Large part machining services. Website: www.superiormachine.com</div>`)[0];
+                popup_7339e2ac00c8692a928adc34f4335f59.setContent(html_df85c25e7277021132cc10a7c2f2bc75);
+            
+        
+
+        marker_6f2cdd3a550d69613cae4ee0a48eb1ac.bindPopup(popup_7339e2ac00c8692a928adc34f4335f59)
+        ;
+
+        
+    
+    
+            var marker_f2d05e0bd48eafc8c05ebfa2787fda71 = L.marker(
+                [43.046, -87.947],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_099fa918796002845b038d77941fbda0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_414a0a2af39a79aa654bcbe242280735 = $(`<div id="html_414a0a2af39a79aa654bcbe242280735" style="width: 100.0%; height: 100.0%;">Milwaukee Machine Works: High-precision CNC services. Phone: 414-355-2600</div>`)[0];
+                popup_099fa918796002845b038d77941fbda0.setContent(html_414a0a2af39a79aa654bcbe242280735);
+            
+        
+
+        marker_f2d05e0bd48eafc8c05ebfa2787fda71.bindPopup(popup_099fa918796002845b038d77941fbda0)
+        ;
+
+        
+    
+    
+            var marker_d9fb59747d2e787c16d67cc74a76565c = L.marker(
+                [43.043, -87.915],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_02d76cf9a5aed7e93acbc8ae5e3686b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d32fc0584214bef6d8a308732305e308 = $(`<div id="html_d32fc0584214bef6d8a308732305e308" style="width: 100.0%; height: 100.0%;">Dynamic Tool & Design: Injection molds, tooling. Phone: 262-783-6340 | Website: www.dyntool.com</div>`)[0];
+                popup_02d76cf9a5aed7e93acbc8ae5e3686b3.setContent(html_d32fc0584214bef6d8a308732305e308);
+            
+        
+
+        marker_d9fb59747d2e787c16d67cc74a76565c.bindPopup(popup_02d76cf9a5aed7e93acbc8ae5e3686b3)
+        ;
+
+        
+    
+    
+            var marker_a4ed29db747827862027e07e52017c79 = L.marker(
+                [40.119, -111.654],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_079cd7279bb88fd8ccab50683e7da8a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ab5bfe0d44a8e012ea42d88e0e8e891 = $(`<div id="html_6ab5bfe0d44a8e012ea42d88e0e8e891" style="width: 100.0%; height: 100.0%;">OSH Cut: 3052 North 170 East, Unit 1, Spanish Fork, UT 84660; M-F 0800–1600; Phone: (801) 850-7584; Email: quote@oshcut.com</div>`)[0];
+                popup_079cd7279bb88fd8ccab50683e7da8a8.setContent(html_6ab5bfe0d44a8e012ea42d88e0e8e891);
+            
+        
+
+        marker_a4ed29db747827862027e07e52017c79.bindPopup(popup_079cd7279bb88fd8ccab50683e7da8a8)
+        ;
+
+        
+    
+    
+            var marker_7b81a4ae40266d7f3e8db61ee89849b6 = L.marker(
+                [44.974, -91.392],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_0e62c20aee7430ee9f293951ad3d9b4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6052fcbcbf46f076105fc59a1ac5f3f = $(`<div id="html_c6052fcbcbf46f076105fc59a1ac5f3f" style="width: 100.0%; height: 100.0%;">Vincent Tool: 4197 123rd Street, Chippewa Falls, WI 54729; Phone: (715) 720-8030; Email: info@vincenttool.com</div>`)[0];
+                popup_0e62c20aee7430ee9f293951ad3d9b4b.setContent(html_c6052fcbcbf46f076105fc59a1ac5f3f);
+            
+        
+
+        marker_7b81a4ae40266d7f3e8db61ee89849b6.bindPopup(popup_0e62c20aee7430ee9f293951ad3d9b4b)
+        ;
+
+        
+    
+    
+            var marker_b2f7773bdd97a014ddc1c98d41bfc89f = L.marker(
+                [45.315, -92.364],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_0f1abf981c604540e62ac2d6b523e1b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bcf6ccf9e4ef990d0eac1b246e3d0cc = $(`<div id="html_5bcf6ccf9e4ef990d0eac1b246e3d0cc" style="width: 100.0%; height: 100.0%;">Noble-X Inc.: 465 Griffin Blvd., Amery, WI 54001; Phone: (715) 268-2681; Email: info@noble-x.com</div>`)[0];
+                popup_0f1abf981c604540e62ac2d6b523e1b9.setContent(html_5bcf6ccf9e4ef990d0eac1b246e3d0cc);
+            
+        
+
+        marker_b2f7773bdd97a014ddc1c98d41bfc89f.bindPopup(popup_0f1abf981c604540e62ac2d6b523e1b9)
+        ;
+
+        
+    
+    
+            var marker_52ee797eafb52855e558a22507d8604b = L.marker(
+                [45.305, -93.565],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_e98b5413acbe93ad6ee3c97f1697e279 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_114e8e15ae6d00b73ddab06c44b2101c = $(`<div id="html_114e8e15ae6d00b73ddab06c44b2101c" style="width: 100.0%; height: 100.0%;">Metal Craft: 13760 Business Center Drive, Elk River, MN 55330; Phone: (800) 964-1395; (763) 441-1855; Email: info@mcandrs.com</div>`)[0];
+                popup_e98b5413acbe93ad6ee3c97f1697e279.setContent(html_114e8e15ae6d00b73ddab06c44b2101c);
+            
+        
+
+        marker_52ee797eafb52855e558a22507d8604b.bindPopup(popup_e98b5413acbe93ad6ee3c97f1697e279)
+        ;
+
+        
+    
+    
+            var marker_f2cc62b275595eb6cff4b8c028b24582 = L.marker(
+                [44.834, -91.521],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_fdc21a7cb45752cc0979f9f4e8259310 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_493055ef9e39d1b6ad69b6a7f197f7bc = $(`<div id="html_493055ef9e39d1b6ad69b6a7f197f7bc" style="width: 100.0%; height: 100.0%;">Riverside: 2445 Alpine Road, Eau Claire, WI 54703; Phone: (800) 483-5817; (715) 726-2066; Email: info@mcandrs.com</div>`)[0];
+                popup_fdc21a7cb45752cc0979f9f4e8259310.setContent(html_493055ef9e39d1b6ad69b6a7f197f7bc);
+            
+        
+
+        marker_f2cc62b275595eb6cff4b8c028b24582.bindPopup(popup_fdc21a7cb45752cc0979f9f4e8259310)
+        ;
+
+        
+    
+    
+            var marker_4ab1bc5f4b96a4164484dba4b2f1f21f = L.marker(
+                [30.09, -94.127],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_d8426ef953486b10684a57ddcf26575d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_814fb0d01f8349db225acf640345aab9 = $(`<div id="html_814fb0d01f8349db225acf640345aab9" style="width: 100.0%; height: 100.0%;">Delta Fastener: 955 Franklin St., Beaumont, TX 77701; Phone: (409) 868-6551; Email: sales@deltafastener.com</div>`)[0];
+                popup_d8426ef953486b10684a57ddcf26575d.setContent(html_814fb0d01f8349db225acf640345aab9);
+            
+        
+
+        marker_4ab1bc5f4b96a4164484dba4b2f1f21f.bindPopup(popup_d8426ef953486b10684a57ddcf26575d)
+        ;
+
+        
+    
+    
+            var marker_eb0f69aba106b49ed8885033d26d4c6d = L.marker(
+                [39.046, -77.119],
+                {}
+            ).addTo(map_605b27f53253db254cc03fbe6bec5ec4);
+        
+    
+        var popup_6fb74dccc6d7d418b7346bd510a13924 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_738469ffa6a25eed52fccb63c6cd1655 = $(`<div id="html_738469ffa6a25eed52fccb63c6cd1655" style="width: 100.0%; height: 100.0%;">Xometry: 6116 Executive Blvd., ste. 800, North Bethesda, MD 20852; Phone: (800) 983-1959; Email: support@xometry.com</div>`)[0];
+                popup_6fb74dccc6d7d418b7346bd510a13924.setContent(html_738469ffa6a25eed52fccb63c6cd1655);
+            
+        
+
+        marker_eb0f69aba106b49ed8885033d26d4c6d.bindPopup(popup_6fb74dccc6d7d418b7346bd510a13924)
+        ;
+
+        
+    
+</script>
+</html>
